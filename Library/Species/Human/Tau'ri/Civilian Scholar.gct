@@ -1,0 +1,2349 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "7eaba346-826b-4880-aa42-1f3ebe4d3a8e",
+	"advantages": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "6cbc606c-2a30-42a6-88be-484cfb8c9806",
+			"based_on_id": "a0e2d307-b76c-4752-9cec-48abb99e74a3",
+			"based_on_hash": "9pIibd2zE7HAIsGbLiXL1Vz/swlH0zbwPrUtL2rnNrw",
+			"name": "Decreased Strength",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": -10,
+			"reference": "B14",
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": -1,
+					"per_level": true,
+					"attribute": "st"
+				}
+			],
+			"categories": [
+				"Attribute",
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "d412a728-3a16-4cbd-8c18-90cbfa1278d2",
+			"based_on_id": "60baf689-5166-4747-9ab0-2e11f657dcc3",
+			"based_on_hash": "Hhm010BUaSJXgdSHHYAvfuiEu/+FvKjO2v6ck/ONwK4",
+			"name": "Decreased Dexterity",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": -20,
+			"reference": "B15",
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": -1,
+					"per_level": true,
+					"attribute": "dx"
+				}
+			],
+			"categories": [
+				"Attribute",
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "06707f15-62f7-4bf1-8880-6357fe1778be",
+			"based_on_id": "25acb265-040d-41b5-82cf-80da17db93f6",
+			"based_on_hash": "X0Fv22JfhEHrWNSr2Pr4r/z70SpNkxQixzQf9+I9Dgc",
+			"name": "Increased Intelligence",
+			"mental": true,
+			"levels": "3",
+			"points_per_level": 20,
+			"reference": "B15",
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"per_level": true,
+					"attribute": "iq"
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Attribute"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "e4931057-b1a5-4da9-856e-4c6735bb61aa",
+			"container_type": "alternative_abilities",
+			"name": "Select 30 Points",
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "5569ecc8-edf7-4bae-87b6-0f9bda0d934b",
+					"based_on_id": "b074474a-27f9-4d63-8f35-3be884ae5343",
+					"based_on_hash": "SougdnS6MloFNLsEDLLF09HFS4JQbR9bCaIrFA8kvP4",
+					"name": "Absolute Direction",
+					"mental": true,
+					"physical": true,
+					"base_points": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "47d17feb-46d6-4452-9bea-c0b6b8c23216",
+							"based_on_id": "940c9da3-6966-4ea6-9974-517614d0606b",
+							"based_on_hash": "WAX25jg/7hFv+311UEijxsnXmzwIs1oyou7O+3/6u/A",
+							"disabled": true,
+							"name": "Requires signal",
+							"reference": "B34",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "7ccd01bb-af6e-4147-80f5-21e4f185ab57",
+							"based_on_id": "12730389-6652-4df8-8b34-ad078b76e408",
+							"based_on_hash": "WOeP08HcW0s0+SvqoMUUCNg2C2ZygeNb/KNKWVaaBqE",
+							"disabled": true,
+							"name": "3D Spatial Sense",
+							"reference": "B34",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "starts_with",
+										"qualifier": "piloting"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "aerobatics"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "free fall"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "hyperspace"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "space"
+									}
+								}
+							]
+						}
+					],
+					"reference": "B34",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "body sense"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "air"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "land"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "sea"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "90442e91-57c0-4735-b82d-c7a9d94b98c7",
+					"based_on_id": "5581bccb-9e2f-4e01-b431-626cd9df23ab",
+					"based_on_hash": "bGGBZiosLKCu96A601xUI79ReqVBCyOin3C9E0v+s3s",
+					"name": "Empathy",
+					"mental": true,
+					"base_points": 15,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "f0bb7172-796d-473e-b8e7-d19f4d16fda4",
+							"based_on_id": "15130107-a6e2-4b7f-9092-477a1428f637",
+							"based_on_hash": "vFdOl9WPCOvExO1QvWPZbNPmpV+Qz1vRcGBQgnrVe4g",
+							"disabled": true,
+							"name": "Remote",
+							"reference": "P48",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						}
+					],
+					"reference": "B51",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "detect lies"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "fortune-telling"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "psychology"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "6ba38015-184e-4bf8-b4b3-a3eb0228624d",
+					"based_on_id": "c12f68d8-25e3-40f1-9bdd-57b500268aca",
+					"based_on_hash": "KkKNrZMHEktmrOLMGk6CWF6uT3O2xh4mpEaxzEneSYE",
+					"name": "Language Talent",
+					"mental": true,
+					"base_points": 10,
+					"reference": "B65",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "af3d0da5-eb1e-4d49-953b-f0c67a1482bf",
+					"based_on_id": "149239c1-aec9-4acc-a5fe-07b64cf6a323",
+					"based_on_hash": "oBXgu3PgreWBHmR9s8lObu9I03M6NDVzuRP7Bz8HpF4",
+					"name": "Language: Egyptian",
+					"mental": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "d5c92848-e823-4ac5-abd6-6dfbdf6c3693",
+							"based_on_id": "ff972d9a-b925-4895-a489-f3d14999074d",
+							"based_on_hash": "PTZ6jSAPUWKOKlORCr9hRHiy6DHR1CAf503TJLM/3rM",
+							"disabled": true,
+							"name": "Native",
+							"reference": "B23",
+							"cost_type": "points",
+							"cost": -6,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "161d477e-0481-48ef-8747-66d7d282e9e5",
+							"based_on_id": "e9f38c71-c4bd-45ee-a5e2-b47a33029f96",
+							"based_on_hash": "DtKZ0Vo3//iUI1VmkwoJuy/9b7gbaYUwli62x1ao3cs",
+							"disabled": true,
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "total",
+							"notes": "None"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "5018cdc1-101e-409d-922c-e0fee2a09a4e",
+							"based_on_id": "6cd10ab4-c4f9-4764-a47d-0e77d105d862",
+							"based_on_hash": "fUM0rV7DN4zKRRDMYD33argFmiTplQMuyap/Z8YtnoE",
+							"disabled": true,
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 1,
+							"affects": "total",
+							"notes": "Broken"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "bd4c0973-c785-4105-aba2-5c70a6a2d781",
+							"based_on_id": "3c7caa3c-055e-4422-ac8e-6a2d632b391c",
+							"based_on_hash": "r29v7AGbJh2NjxafN936EHD4/hUhBNgHAPBe+e3906E",
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 2,
+							"affects": "total",
+							"notes": "Accented"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "1901fe22-d2a9-4d7d-b7de-c2e26c7e09e1",
+							"based_on_id": "231ba28d-11ce-44e1-8d23-074d40ca57c6",
+							"based_on_hash": "HqLvrw3qdEeiAvADO50D/apgO+NfM8busq4EtKRpOug",
+							"disabled": true,
+							"name": "Spoken",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 3,
+							"affects": "total",
+							"notes": "Native"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "a6bbccfd-8340-41af-8b20-e986132da96d",
+							"based_on_id": "152ad20b-dc58-4abb-b256-71da14dbb89c",
+							"based_on_hash": "U1q00bshFEYtwcuKsNfd5Af9POb375cPsilahaLXHCs",
+							"disabled": true,
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 0,
+							"affects": "total",
+							"notes": "None"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "72128a5a-3810-4fd8-9a1f-af49f1f7562c",
+							"based_on_id": "6304a0d6-80f3-4a5f-b3cc-3ba2ae0c8063",
+							"based_on_hash": "kimMn5ME4U4gnqtTMo1Qs3sgqqwKog+E6DVoO+uO/9c",
+							"disabled": true,
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 1,
+							"affects": "total",
+							"notes": "Broken"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "551dd174-3c57-4596-b4c3-4c030f6826c2",
+							"based_on_id": "5818ab4a-2c4b-4c3e-a711-c4b6332daaca",
+							"based_on_hash": "1ZJQO6nenJpjW349i0CYwfgSVBF36JA6Htdf/zo3drY",
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 2,
+							"affects": "total",
+							"notes": "Accented"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "56c94b34-5ac3-4b44-9207-8042293046d5",
+							"based_on_id": "1b77515e-5789-49a0-8238-7242900c8c2c",
+							"based_on_hash": "MoLKMZJQV3sFeR5r8Dm3Z09D1QeQqknOMkPCj0ZIQis",
+							"disabled": true,
+							"name": "Written",
+							"reference": "B24",
+							"cost_type": "points",
+							"cost": 3,
+							"affects": "total",
+							"notes": "Native"
+						}
+					],
+					"reference": "B24",
+					"categories": [
+						"Advantage",
+						"Language"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "8a0c19da-4217-4c41-b7ae-5cc45a50e0e0",
+					"based_on_id": "8a8229a8-02d0-4943-bdff-81099e0b00e9",
+					"based_on_hash": "BopT61XMSFhEOcl05BXKMoOlRAMmAdmz5EdRGQOnwGo",
+					"name": "Luck",
+					"mental": true,
+					"base_points": 15,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "630dfc14-6fb6-447d-8555-023a5351ceec",
+							"based_on_id": "b5f2c667-bec1-442e-9ef9-f051a6c31510",
+							"based_on_hash": "aGHnRn9WEId5Qf3vUwN6EKxe/mIoR4yw5q3NPJOTqOI",
+							"disabled": true,
+							"name": "Active",
+							"reference": "B66",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "22127eb5-6bef-4236-9ee0-7cf45edc7a3d",
+							"based_on_id": "d9965ee9-527e-4933-95ef-ef8a02ed7683",
+							"based_on_hash": "bLlYRRx/cxJlZkFZ+veJArZqQs+EOEE09s+pV2QUHiQ",
+							"disabled": true,
+							"name": "Aspected",
+							"reference": "B66",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total",
+							"notes": "@Aspect@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "5ce75654-fa1f-49c3-88a4-d6b3b13461ff",
+							"based_on_id": "67318c7d-d090-4012-a955-0d1a36052c27",
+							"based_on_hash": "Z4xIzxZ58dwO4wj7vqmLHsuPxq7ssQqOPOcJYgWV7yg",
+							"disabled": true,
+							"name": "Defensive",
+							"reference": "B66",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e3b27fd0-555e-4e04-91c0-ae9e723b471c",
+							"based_on_id": "4f41a545-c80c-4754-bf3c-93b9662beef2",
+							"based_on_hash": "or/m5+4joJ3sTvvYg0CLr2XzKEPklh5/3JA7yfi2dXE",
+							"disabled": true,
+							"name": "Wishing",
+							"reference": "P59",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total"
+						}
+					],
+					"reference": "B66",
+					"notes": "Usable once per hour of play",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "ed7f8df3-aa19-4358-bc1e-e5dc019004f2",
+					"based_on_id": "3c155ebc-3a17-4a33-abec-c8392e2dbe95",
+					"based_on_hash": "QqC/eT58hyd4Y02Qa34U88dD7WqNr6N8r2ZIYW9sw+w",
+					"round_down": true,
+					"name": "Reputation (Brilliant Scholar)",
+					"social": true,
+					"levels": "2",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b43a4885-6151-4a97-ac13-36fc0eea20e5",
+							"based_on_id": "38aa3113-4709-485c-be35-ba35d96192fd",
+							"based_on_hash": "xaFFFX4otP83wkjjGjLM9IxQ5P8UwcEWolWDKKKZW7o",
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 1,
+							"notes": "Almost everyone"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "bf5d27db-b2fd-4adb-b29d-c7226fccba67",
+							"based_on_id": "39082380-367d-4319-9daf-854976f45562",
+							"based_on_hash": "Ju+8+71z/xUMG4dzgbn1Nhfnnm7/DW57rS4quiKrHBk",
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.67,
+							"notes": "Almost everyone except @large class of people@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "12f163bf-f274-4417-823a-ca9dc8d91917",
+							"based_on_id": "b43f0211-b5bf-4271-b6cc-acd6483af8d2",
+							"based_on_hash": "YNbnYJPb2gzACne+mmCd+vhqCmdRmN/AcSaILPNkPyU",
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.5,
+							"notes": "Academics"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "6a0ed69c-d81b-4cab-a810-ddcbb762a1f8",
+							"based_on_id": "ca59a34a-2467-417f-9764-46e7617201a2",
+							"based_on_hash": "RFBw0q1mrUjrr5wVpFZ2Ply5Kz8Ec2doLdVpE6czUP0",
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.33,
+							"notes": "@Small class of people@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "1b286632-29d2-4ef6-84d7-1d804209e7dd",
+							"based_on_id": "bf87af2b-67fd-43ca-b53d-22911e628cfe",
+							"based_on_hash": "GFrWnoHL1QOfUhrHIogTg0OlZWJP038CBuLPo5wp8RE",
+							"disabled": true,
+							"name": "Recognized all the time",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "74f73a49-6221-48c2-9c0d-e528948af3e3",
+							"based_on_id": "a0d8d318-d895-4cd6-9412-3b4839438dbe",
+							"based_on_hash": "7CQsKTpwtOxhDBzN5IGf5ihCNOS7a+ruJlk3LwCYoLM",
+							"name": "Recognized sometimes",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 0.5,
+							"notes": "10-"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "c9584964-a039-4e90-9ba8-4239931f36aa",
+							"based_on_id": "c32da9c0-87ba-4504-b87d-7ae275bec1ce",
+							"based_on_hash": "VAeEN47aC5ijTUQcTKz4Sed6qPofbZc99/AUIySlqV8",
+							"disabled": true,
+							"name": "Recognized occasionally",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 0.33,
+							"notes": "7-"
+						}
+					],
+					"reference": "B26",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "d6ca0116-934d-4171-a2f2-35ec495d18ff",
+					"based_on_id": "6e4cb440-84a4-481a-ae1a-467743192710",
+					"based_on_hash": "7VLmpOiERF/s/0vl96aN284ZkC16nF++yl0z0bYMbPg",
+					"name": "Single-Minded",
+					"mental": true,
+					"base_points": 5,
+					"reference": "B85",
+					"notes": "+3 to rolls for any lengthy mental task you concentrate on to the exclusion of other activities, if the GM feels such focus would be beneficial. You tend to ignore everything else while obsessed and have -5 to all rolls to notice interruptions.",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "ce8e3aeb-e016-48d4-ba2f-2b3a2471e87f",
+					"based_on_id": "528254ea-5457-4090-979b-b06583bb2f76",
+					"based_on_hash": "kQ4WFOEgUK2Vz61/7XyCajqd+q6u01Xi1DI9wXSN+lw",
+					"name": "Status",
+					"social": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"reference": "B28",
+					"notes": "Scholar",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "734c5e18-0a28-45d6-8720-173079cfabbf",
+					"based_on_id": "66436989-dd48-41f6-bbf7-e4f77418168d",
+					"based_on_hash": "QacsK1iwd/7llicQbN0N/ofV650HsJYfEVzYIUIptbI",
+					"name": "Comfortable Wealth",
+					"social": true,
+					"base_points": 10,
+					"reference": "B25",
+					"notes": "Starting wealth is twice normal",
+					"categories": [
+						"Advantage",
+						"Wealth"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "a171a241-5f0c-4ce6-be05-52e3e05f9159",
+					"based_on_id": "82d0a957-dfa6-46f7-a3a8-f0f64c8a0600",
+					"based_on_hash": "lvVILLdYdXehmWkhthUZ9g+yM1Y0isI47DldJ6yQzUg",
+					"name": "Voice",
+					"physical": true,
+					"base_points": 10,
+					"reference": "B97",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "diplomacy"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "fast-talk"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "mimicry"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "performance"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "politics"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "public speaking"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "sex appeal"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "singing"
+							}
+						},
+						{
+							"type": "reaction_bonus",
+							"amount": 2,
+							"situation": "from others who can hear your voice"
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "c980150e-c129-40b1-8010-18ee7415c3e0",
+			"container_type": "alternative_abilities",
+			"name": "Select -20 Points",
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "be0b3930-4175-4e01-9ef4-a16cb07e0f12",
+					"based_on_id": "5f10acf3-8205-4194-80ad-f76b63ef867d",
+					"based_on_hash": "isgwAE58mo3lb4UZ6NcgE9qR5gIORwqUqaTQ/TI11nA",
+					"name": "Absent-Mindedness",
+					"mental": true,
+					"base_points": -15,
+					"reference": "B122",
+					"notes": "-5 on all IQ and IQ-based skill rolls, save those for the task you are currently concentrating on. Once adrift in your own thoughts, you must roll against Perception-5 in order to notice any event short of personal physical injury.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "5c1fe084-2af6-423d-8399-802abab904cd",
+					"based_on_id": "e8a65836-d72c-452f-a8d4-fdb7d68aa745",
+					"based_on_hash": "0V0Yxxm4bNw3GL+vTHgl2R6GtxAwNZREzjJSpxWs5xo",
+					"name": "Bad Sight (Nearsighted)",
+					"physical": true,
+					"base_points": -25,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "51c77527-11fc-4a36-b517-8cf1962bbc2c",
+							"based_on_id": "bcf5ee4d-8f70-41e5-81ee-9f4a2956f9c3",
+							"based_on_hash": "mwMJwyGG09AlsXEPWOcJndNpAqnbhE56pwJnfuTAIuU",
+							"name": "Mitigator",
+							"cost_type": "percentage",
+							"cost": -60,
+							"affects": "total",
+							"notes": "Glasses"
+						}
+					],
+					"reference": "B123",
+					"notes": " -6 to Vision rolls to spot items more than 1 yd away; -2 to all melee attacks; double actual distance to the target when calculating the range modifier for ranged attacks",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "ad761174-7099-477a-9aba-dde85edcc2cf",
+					"based_on_id": "eccfc218-dec2-47ab-98e1-d39e75e5b519",
+					"based_on_hash": "QaFoMP1GxTx4bDLF8sSLGw4st25gV5HEMrncIEWi8o4",
+					"name": "Bad Temper",
+					"mental": true,
+					"base_points": -10,
+					"cr": 12,
+					"reference": "B124",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "d2660197-6a35-477c-9402-5d9d4cea5aa1",
+					"based_on_id": "be5292c1-f73b-487f-a31c-1231e69f9e48",
+					"based_on_hash": "hBbexgixMYIywYSypKfdWNOYW2l004RGVQ6WJuXe7Vo",
+					"name": "Code of Honor (Professional)",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B127",
+					"notes": "Adhere to the ethics of your profession; always do your job to the best of your ability; support your guild, union, or professional association.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "86ab9e1d-0f15-499f-ab95-a2086e6c747e",
+					"based_on_id": "0b04cb1b-da61-4ada-83e7-4f707512c4be",
+					"based_on_hash": "XCrBvpwLmzIAOEpFa8pXfRP63ZCz2+E4VbSmrL9TImE",
+					"name": "Dependant (Family Member)",
+					"social": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "89c6279b-dddc-474d-a0d1-6b3f178e6496",
+							"based_on_id": "26ab3118-378c-4c31-9b4b-8a9a525faab7",
+							"based_on_hash": "69LIPqErYiPspmWRCME9NQz27UjtLSthT3ScooYCPdU",
+							"disabled": true,
+							"name": "Point total",
+							"reference": "B131",
+							"cost_type": "points",
+							"cost": -1,
+							"affects": "total",
+							"notes": "100% of your starting points"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "3a33643b-4a87-4411-afb5-ff4d7ba60fa0",
+							"based_on_id": "1a68ec2f-8c3f-4e3e-bd98-2499614a1431",
+							"based_on_hash": "wbogezZuwbo13ZKqH9Ka5r1EkpwbMbb5CwKcrJzk+MA",
+							"disabled": true,
+							"name": "Point total",
+							"reference": "B131",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total",
+							"notes": "75% of your starting points"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "fe13a695-f284-49b3-8e78-aecf65f351db",
+							"based_on_id": "c0ce555f-bb53-403a-85eb-70a498853fd0",
+							"based_on_hash": "vJLSmXCzjqKBgj6YQmIuriu1yhTC4EeMxKDAmmaXpV0",
+							"name": "Point total",
+							"reference": "B131",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total",
+							"notes": "50% of your starting points"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "4794a911-ebd6-434b-b8e1-484574730f6c",
+							"based_on_id": "9be77b60-79ba-4837-af58-4977dfaf3198",
+							"based_on_hash": "lURFtoRoxTgtd3GFtszNB/9NkBTy5HV3TPX1IlDLvT4",
+							"disabled": true,
+							"name": "Point total",
+							"reference": "B131",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total",
+							"notes": "25% of your starting points"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "2db7ca5f-056a-49a8-a07b-e48e3d3a8e12",
+							"based_on_id": "58fe8f1f-162c-49a3-b7a3-20f203cb53b4",
+							"based_on_hash": "kxkyv8R8BaWCbNMNiciNoxD196GE5cumnqyFefmyyhI",
+							"disabled": true,
+							"name": "Point total",
+							"reference": "B131",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total",
+							"notes": "0 or fewer points"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "73dcb70f-8195-4d24-9dc6-fd8ff67f894b",
+							"based_on_id": "fbbc1cc5-5076-4f43-a8ff-98bc1af558d6",
+							"based_on_hash": "d35a3Sos5gCJHZqSSaaW/sB6wJWVAzlZi/OOQmtFSFE",
+							"disabled": true,
+							"name": "Appears almost all the time",
+							"reference": "B36",
+							"cost_type": "multiplier",
+							"cost": 3,
+							"notes": "15-"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "4238b0bc-df81-47ae-8f97-7b65402acfba",
+							"based_on_id": "4e14bf0b-9d2c-4d9d-bd5b-468bbcfccb83",
+							"based_on_hash": "RUfDzS3PATZe00kfI4yTh0xwlSJYBWaM63psXPgGNos",
+							"disabled": true,
+							"name": "Appears quite often",
+							"reference": "B36",
+							"cost_type": "multiplier",
+							"cost": 2,
+							"notes": "12-"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b50405ce-6f96-488b-af34-cf3dc6bf6c63",
+							"based_on_id": "06e56e19-030d-4618-8733-60e5c7b753da",
+							"based_on_hash": "Yy0qC4znDvXG1jxy8Zhgxp9i1SpTNdYAog8ADSfopVI",
+							"disabled": true,
+							"name": "Appears fairly often",
+							"reference": "B36",
+							"cost_type": "multiplier",
+							"cost": 1,
+							"notes": "9-"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e032a5e2-74bd-4a3b-b10a-26741180d35a",
+							"based_on_id": "b4f921c5-ccc8-4368-9543-d77fb9b23217",
+							"based_on_hash": "U3CA+C/PXCw7ALu46XZ+cb1I5cBb2X+7yrF9s1aic8M",
+							"name": "Appears quite rarely",
+							"reference": "B36",
+							"cost_type": "multiplier",
+							"cost": 0.5,
+							"notes": "6-"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "f87b2c14-772a-471e-9aaf-435176e77071",
+							"based_on_id": "e3c0b972-e9db-4323-a3b2-53b00836dff8",
+							"based_on_hash": "Z2TvvBCdqAqjXFhj/uM2n9DZBXtVsLnNA3GoVcQW+co",
+							"disabled": true,
+							"name": "Group",
+							"reference": "B131",
+							"cost_type": "multiplier",
+							"cost": 2
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "ef3fa6b4-b0bb-49e8-8e6e-0c861c2d30e7",
+							"based_on_id": "9b3a8cbf-a2af-4a29-ab6f-c10dc19e7001",
+							"based_on_hash": "RKh4e3ZxzZ5tfJhI/iAYqLto0bYTNYBSqIdF1xDIwDg",
+							"disabled": true,
+							"name": "Acquaintance",
+							"reference": "B131",
+							"cost_type": "multiplier",
+							"cost": 0.5
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b4cd4710-cf97-444a-b856-b1a84836424c",
+							"based_on_id": "738ac024-b159-4dea-9724-f23f833f5b6e",
+							"based_on_hash": "lc5wgNYCI+sNxaI+rOfWgoB3s1gtYOgNXpKUcxRw/5M",
+							"disabled": true,
+							"name": "Friend",
+							"reference": "B131",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "d95d59ff-68f3-48c7-8cf5-15f7fcdfa08c",
+							"based_on_id": "7768eb5d-8010-4f30-9435-398d20591c25",
+							"based_on_hash": "QQajio2UA4ErxTeA+Z+nBY2Ulbi4BuI78VYQhurXIg4",
+							"name": "Loved one",
+							"reference": "B131",
+							"cost_type": "multiplier",
+							"cost": 2
+						}
+					],
+					"reference": "B131",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "7b8699d0-fe2a-4cf8-9540-38a53b83b019",
+					"based_on_id": "1ed095f2-3ef4-4d7e-b00c-b235bcff6d8a",
+					"based_on_hash": "V292cE/tpYvsj/5B11vScKvCQZ/JypiRr5ZvuiapU7w",
+					"name": "Fat",
+					"physical": true,
+					"base_points": -3,
+					"reference": "B19",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"which": "ht",
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": 15
+								}
+							}
+						]
+					},
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "disguise"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "shadowing"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "swimming"
+							}
+						}
+					],
+					"notes": "+2 ST vs. knockback",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "2e1be3c8-36e9-4e4b-aa5e-25f1a07d58b5",
+					"based_on_id": "8dfb17db-1a7f-49f5-af74-38ced79d3875",
+					"based_on_hash": "bDGOsZmdAHz8qSvyssIe8AVGcCAeZfZQRcIpFk5VZW4",
+					"name": "Gluttony",
+					"mental": true,
+					"base_points": -5,
+					"cr": 12,
+					"reference": "B137",
+					"notes": "Make a self-control roll when presented with a tempting morsel or good wine that, for some reason, you should resist. If you fail, you partake – regardless of the consequences.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "b5179477-c13f-41e6-a158-2dfa23d249b1",
+					"based_on_id": "b7a0c1db-f40a-471a-857f-e0c88e218d72",
+					"based_on_hash": "Rv0hhrbRJsv0p9Ma16hydWv9n05WET0aVva1aeX5O84",
+					"name": "Greed",
+					"mental": true,
+					"base_points": -15,
+					"cr": 12,
+					"reference": "B137",
+					"notes": "Make a self-control roll any time riches are offered – as payment for fair work, gains from adventure, spoils of crime, or just bait. If you fail, you do whatever it takes to get the payoff.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "1d33b38f-d214-4957-a2ff-657afb01dc30",
+					"based_on_id": "a62238d3-a7d7-496b-9666-d8c7fe152f74",
+					"based_on_hash": "7KfIByx842kRsuXm9t56yAZykKK8WnKmUg+47bRpBPw",
+					"name": "Hard of Hearing",
+					"physical": true,
+					"base_points": -10,
+					"reference": "B138",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": -4,
+							"attribute": "hearing"
+						}
+					],
+					"notes": "-4 on any skill roll where it is important that you understand someone who is talking",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "9445adfe-5795-46cf-950a-8901346922af",
+					"based_on_id": "e9b12a42-c2b7-436e-9752-75438eebbb44",
+					"based_on_hash": "2Fg8lb0+niO5tQ4V/ySLOGHq1T/pLJRC1Za9hyFtDyw",
+					"name": "Honesty",
+					"mental": true,
+					"base_points": -10,
+					"cr": 12,
+					"reference": "B138",
+					"notes": "Make a self-control roll when faced with the “need” to break unreasonable laws; if you fail, you must obey the law, whatever the consequences. If you manage to resist your urges and break the law, make a second self-control roll afterward. If you fail, you must turn yourself in to the authorities!",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "fd218d10-f408-4f9c-ad93-e175c8920892",
+					"based_on_id": "af0b089c-dc85-4f25-86d4-9c0bb3f226ff",
+					"based_on_hash": "PNjjOhrm8jf2CXK5IsZAbhvtFQsJW3wxSdj+Ju1CLCY",
+					"name": "Jealousy",
+					"mental": true,
+					"base_points": -10,
+					"reference": "B140",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"amount": -2,
+							"situation": "toward those you are jealous of (may be as much as -4, at GM's discretion)"
+						}
+					],
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "a3c7701f-96a5-4243-851a-01229994d0ce",
+					"based_on_id": "43958930-d022-45ae-a8e3-ae164a2ad129",
+					"based_on_hash": "PjB2x7UCzHZj38wS1dKE0LcrMm9Z9nuopzgWlA/PtiQ",
+					"name": "Odious Personal Habit",
+					"physical": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "ffbb3793-2e23-4a78-8a32-c3bfa9cc6ff8",
+							"based_on_id": "3d982038-f3cc-476f-8f1a-1221f87c1ec8",
+							"based_on_hash": "TRYDPOpxKl+d5if5eMvzWJSmGIEPwWL8mt39i9q1WFs",
+							"name": "-1 Reaction",
+							"reference": "B22",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "ac7e52a4-af47-4389-89e0-7f5aafa3ad5a",
+							"based_on_id": "9dd7b646-b563-4eb1-ac3b-6672412868c1",
+							"based_on_hash": "L9I6HVmAjK0AxenqetRYVH78JAaNCwpOetSVgJnWoaM",
+							"disabled": true,
+							"name": "-2 Reaction",
+							"reference": "B22",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "f61da6a1-9e08-492c-9e71-a5edcf9b0af0",
+							"based_on_id": "5ed445b6-67ea-4f24-af06-50d80a1d0d94",
+							"based_on_hash": "CFUQivBWGhnK/L/mh/J3i7ZVpSaMHUmg1rsb447hmzM",
+							"disabled": true,
+							"name": "-3 Reaction",
+							"reference": "B22",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						}
+					],
+					"reference": "B22",
+					"notes": "Meddling With Things Man Was Not Meant To Know",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "963348a5-679d-4e15-9d70-b50078eaadc5",
+					"based_on_id": "3ffb9cc5-3a0c-4eb5-a906-938ef1cb8ccc",
+					"based_on_hash": "5VTF9p/GKP881cB7AXxXKkt+V01zObEYG0h/dK1UcuA",
+					"name": "Pacifism: Cannot Kill",
+					"mental": true,
+					"base_points": -15,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "3cf3ea75-f9c1-4f22-b5e5-4bdf1cb1af53",
+							"based_on_id": "90acca03-6b28-4979-a04f-b2f75d4d1fa9",
+							"based_on_hash": "iLukU2W30mOIqB69X/AQb1Aix3IEt1jljNy+8IuPm0I",
+							"disabled": true,
+							"name": "Species-Specific",
+							"reference": "UT32",
+							"cost_type": "percentage",
+							"cost": -80,
+							"affects": "total"
+						}
+					],
+					"reference": "B148",
+					"notes": "You may fight – you may even start fights – but you may never do anything that seems likely to kill another. This includes abandoning a wounded foe to die “on his own”! You must do your best to keep your companions from killing, too. If you do kill someone (or feel responsible for a death), you immediately suffer a nervous breakdown. Roll 3d and be totally morose and useless for that many days. During this time, you must make a Will roll to offer any sort of violence toward anyone, for any reason.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "f958d651-3c77-47b8-b5b0-8bddfb31790f",
+					"based_on_id": "b70003ce-071b-48a3-bfc4-41513d9ba055",
+					"based_on_hash": "s64XX59CiiT0a2+oDYceIiKi+9LDSsrU36zHYa2NikM",
+					"name": "Pacifism: Self-Defense Only",
+					"mental": true,
+					"base_points": -15,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "7736ac6f-e270-4835-a07d-877698f11743",
+							"based_on_id": "49522b66-fa2d-4daa-8672-487ba857cc9f",
+							"based_on_hash": "7uWNaVDgmAOxK/AkaIX+SRxUVE8gVIr1qJsnysRbS74",
+							"disabled": true,
+							"name": "Species-Specific",
+							"reference": "UT32",
+							"cost_type": "percentage",
+							"cost": -80,
+							"affects": "total"
+						}
+					],
+					"reference": "B148",
+					"notes": "You only fight to defend yourself or those in your care, using only as much force as necessary (no pre-emptive strikes allowed!). You must do your best to discourage others from starting fights.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "a8f17b55-8d17-43dd-8463-1c77b826d05b",
+					"based_on_id": "bb686b77-de17-499e-b91f-a13b63368211",
+					"based_on_hash": "eDGzdpVdJVuhQhh7cNpvJwcB9nQ3rhAbSgJPIEeGUSE",
+					"round_down": true,
+					"name": "Reputation (Crank)",
+					"social": true,
+					"levels": "2",
+					"points_per_level": -5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "7122f654-f089-449b-a829-39376648a2e6",
+							"based_on_id": "4ab6e069-8e13-4a45-82bd-e07fbebf17a7",
+							"based_on_hash": "2zci2QqYuaJsdgvCu46cW6RT30H7pJsdlPO/AShzs4M",
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 1,
+							"notes": "Almost everyone"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "f7c59780-fd24-4937-830c-b9fa6388e0c2",
+							"based_on_id": "cd068eef-48af-4246-b1f4-c634f7c24a85",
+							"based_on_hash": "K/btRIb97YoKX95T5ytliT6R4QH1Byewcf1qqE2B3Sk",
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.67,
+							"notes": "Almost everyone except @large class of people@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "a0245b34-7c02-4ca9-97c9-da347d287d65",
+							"based_on_id": "d65bc4bc-7b2c-448f-bac1-09f70431fb57",
+							"based_on_hash": "udzYQ0qGxQb/PQRoaHWKGGlIEYtvcSFhXxrrpBgvKpU",
+							"disabled": true,
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.5,
+							"notes": "@Large class of people@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "400da889-ae2f-422d-b75a-ec3b47bc6570",
+							"based_on_id": "8ecfba87-4088-4469-baa7-9c83d0be8f02",
+							"based_on_hash": "1mhLZcozchJ+fYldalPfYoWNbwFPGTDABZg5WqQwu94",
+							"name": "People Affected",
+							"reference": "B27",
+							"cost_type": "multiplier",
+							"cost": 0.33,
+							"notes": "Conservative Academics"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "29c3dcc0-2b33-4a2c-9074-b3a6564f8d66",
+							"based_on_id": "cea05dc0-0766-4fd4-a469-9a45972f922c",
+							"based_on_hash": "RaLC6k6cqMSPOoahRuwCJqx8CKAO7JQlcRqpf7P0wCY",
+							"disabled": true,
+							"name": "Recognized all the time",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "42661469-46ff-46eb-a651-70b0cf105696",
+							"based_on_id": "2d07e305-cee0-4c7f-90de-5977987209cf",
+							"based_on_hash": "WVZGTRli3TqePOFHGbMU3Gbc6QziWELVR+pORIdO5gg",
+							"name": "Recognized sometimes",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 0.5,
+							"notes": "10-"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b4d37fc4-91f4-44bb-b546-e8870e807c6a",
+							"based_on_id": "9c247890-4512-431a-8f0e-3a033bc21284",
+							"based_on_hash": "e9xZkR0Czxw2rrgbSV9hOGh1IpRbutc7PE31dAZ86QQ",
+							"disabled": true,
+							"name": "Recognized occasionally",
+							"reference": "B28",
+							"cost_type": "multiplier",
+							"cost": 0.33,
+							"notes": "7-"
+						}
+					],
+					"reference": "B26",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "44c33b99-2cf0-498e-b391-7857f8f8a789",
+					"based_on_id": "1f853f40-c0cd-4382-a568-af9b4a6ab75f",
+					"based_on_hash": "+A7/gCxuwLvt5m1adcWenChnCZi+zBubxNqPXhuPDm0",
+					"name": "Mild Shyness",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B154",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Acting"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Carousing"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Diplomacy"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Fast-Talk"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Intimidation"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Leadership"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Merchant"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Panhandling"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Performance"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Politics"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Public Speaking"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Savoir-Faire"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Sex Appeal"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Streetwise"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Teaching"
+							}
+						}
+					],
+					"notes": "You are uneasy with strangers, especially assertive or attractive ones.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "a6f2adf1-60de-4078-8c3f-8fd1d443d93a",
+					"based_on_id": "30a7c514-7874-4213-b846-fabe416ba25a",
+					"based_on_hash": "pFmIRsuxlvAIG5YFe98MbPbhmBfKb0YsmVF1b7U9GiE",
+					"name": "Severe Shyness",
+					"mental": true,
+					"base_points": -10,
+					"reference": "B154",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Acting"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Carousing"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Diplomacy"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Fast-Talk"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Intimidation"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Leadership"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Merchant"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Panhandling"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Performance"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Politics"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Public Speaking"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Savoir-Faire"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Sex Appeal"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Streetwise"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "Teaching"
+							}
+						}
+					],
+					"notes": "You are very uncomfortable around strangers, and tend to be quiet even among friends.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "0041a2b4-80a3-4750-82e8-fc0be1877380",
+					"based_on_id": "0e4d6789-73ea-4084-9b99-e813844ab8c8",
+					"based_on_hash": "rg+7NXkjmPpoHJN1YfuEVKoDjIutMlGqliRZN07fWoU",
+					"name": "Skinny",
+					"physical": true,
+					"base_points": -5,
+					"reference": "B18",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "attribute_prereq",
+								"has": true,
+								"which": "ht",
+								"qualifier": {
+									"compare": "at_most",
+									"qualifier": 14
+								}
+							}
+						]
+					},
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "disguise"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": -2,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "shadowing"
+							}
+						}
+					],
+					"notes": "-2 ST vs. knockback",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "a1c582c5-5d3e-42af-bed7-667dadad4851",
+					"based_on_id": "5452dcb5-90b1-424d-bab5-51ca5830fede",
+					"based_on_hash": "pi4uNlamfMJ2sGwbg1zhg4Y0R8yARexx4juAPvglLAw",
+					"name": "Stubbornness",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B157",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"amount": -1,
+							"situation": "from others"
+						}
+					],
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "0d569b13-6f69-447b-a219-425ecd90cc4b",
+					"based_on_id": "d985b682-25d7-4656-b8e5-d249d7c74add",
+					"based_on_hash": "6puFKj9UxngyWE4WUhOBNIQ9EgGubrLxPD1jThFUX7U",
+					"name": "Truthfulness",
+					"mental": true,
+					"base_points": -5,
+					"cr": 12,
+					"reference": "B159",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": -5,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "fast talk"
+							}
+						}
+					],
+					"notes": "Make a self-control roll whenever you must keep silent about an uncomfortable truth (lying by omission). Roll at -5 if you actually have to tell a falsehood! If you fail, you blurt out the truth, or stumble so much that your lie is obvious.",
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"id": "717b4a3f-c90a-41fb-ae18-e68bef2a7e13",
+			"name": "Primary",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "6edb9737-f3a2-4afd-a954-c2b0208df32a",
+					"based_on_id": "221f5c1e-4801-48b6-9253-bc9214cf3957",
+					"based_on_hash": "E+C6zH1pkGnVppLPTjlWKyfT7h/N0o8ubHEc+uE72Yo",
+					"name": "Anthropology",
+					"reference": "B175",
+					"specialization": "Human",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Paleontology",
+							"specialization": "Paleoanthropology",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Sociology",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Social Sciences/Humanities"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "a2316aca-727f-4aca-9095-668e15890e67",
+					"based_on_id": "6737a007-8564-46f2-b46c-446c227d5fef",
+					"based_on_hash": "+Re3K3qjUA/V7lbJZpiskL9AdILZ9vi8T6fmSbvxNPE",
+					"name": "History",
+					"reference": "B200",
+					"specialization": "Egyptian",
+					"difficulty": "IQ/H",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						}
+					],
+					"categories": [
+						"Social Sciences/Humanities"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "07552a2f-10e9-4795-b74e-66b350317bf9",
+					"based_on_id": "22255dbb-afc8-4e90-b9de-287713befe67",
+					"based_on_hash": "7kFBbLbj5ObDiNghYM+Hf3cNbHr21aUrB+9zpvVdNhg",
+					"name": "Research",
+					"reference": "B217",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "prereq_list",
+								"all": true,
+								"when_tl": {
+									"compare": "at_least",
+									"qualifier": 8
+								},
+								"prereqs": [
+									{
+										"type": "skill_prereq",
+										"has": true,
+										"name": {
+											"compare": "is",
+											"qualifier": "Computer Operation"
+										}
+									}
+								]
+							},
+							{
+								"type": "prereq_list",
+								"all": false,
+								"when_tl": {
+									"compare": "at_most",
+									"qualifier": 4
+								},
+								"prereqs": [
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Native"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Accented)"
+										}
+									},
+									{
+										"type": "advantage_prereq",
+										"has": true,
+										"name": {
+											"compare": "starts_with",
+											"qualifier": "Language"
+										},
+										"notes": {
+											"compare": "contains",
+											"qualifier": "Written (Broken)"
+										}
+									}
+								]
+							}
+						]
+					},
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Writing",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Scholarly",
+						"Spy"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "6c5ac0ac-4fb1-44e7-b9d6-d36fec9ff7ee",
+					"based_on_id": "39ffc1e8-f487-4431-b271-332944e2b1ba",
+					"based_on_hash": "wfL17LJnhMyPHB1mnNJozSdntjbc/BPnARsd/VvRZ2I",
+					"name": "Theology",
+					"reference": "B226",
+					"specialization": "Egyptian",
+					"difficulty": "IQ/H",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Religious Ritual",
+							"specialization": "Egyptian",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Social Sciences/Humanities"
+					]
+				}
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"id": "504f356d-cd3b-459f-a3ae-c1a5ad507f61",
+			"name": "Secondary",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "cf64214f-0fec-4c15-86cb-f8815d6d7c81",
+					"based_on_id": "5a06f798-27c1-4d77-a9f4-21bd5112aa80",
+					"based_on_hash": "/LJtZB8UbwzIIjKyjNvbI2q/29IMT2uwDc430Il+X9M",
+					"name": "Astronomy",
+					"reference": "B179",
+					"tech_level": "",
+					"difficulty": "IQ/H",
+					"points": 1,
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "skill_prereq",
+								"has": true,
+								"name": {
+									"compare": "is",
+									"qualifier": "mathematics"
+								},
+								"specialization": {
+									"compare": "is",
+									"qualifier": "applied"
+								}
+							}
+						]
+					},
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						}
+					],
+					"categories": [
+						"Natural Science"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "236d8796-f9d0-45a6-87f1-633b1555fd82",
+					"based_on_id": "d3f76fd0-2dee-4a41-b37d-14d28097b284",
+					"based_on_hash": "HL4ASkkRcStxVvUnPWYarnstHkP0hdKmIB2o+F5Ats8",
+					"name": "Climbing",
+					"reference": "B183",
+					"encumbrance_penalty_multiplier": 1,
+					"difficulty": "DX/A",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Athletic",
+						"Criminal/Street",
+						"Outdoor/Exploration"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "fa2ef502-f244-4224-bb3e-005865e60502",
+					"based_on_id": "2856d9a0-b914-4002-8d7b-91f18afd1148",
+					"based_on_hash": "RVYXdKZu5prC2IaDZevGI+6Ix3nD/pavQ0okf6I7q2Y",
+					"name": "First Aid",
+					"reference": "B195",
+					"tech_level": "",
+					"difficulty": "IQ/E",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Esoteric Medicine"
+						},
+						{
+							"type": "Skill",
+							"name": "Physician"
+						},
+						{
+							"type": "Skill",
+							"name": "Veterinary",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Everyman",
+						"Medical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "e5220b3d-8fbd-40f3-bbe2-b0186928ed5d",
+					"based_on_id": "720f2ca7-3e5c-48e2-a579-8df0004c0677",
+					"based_on_hash": "OAvyieaOWxQPQsJ+qxvO0fnDVzXakUTOAg4yhhoXHQo",
+					"name": "Navigation",
+					"reference": "B211",
+					"specialization": "Land",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Cartography",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Mathematics",
+							"specialization": "Surveying",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Navigation",
+							"specialization": "Air",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Navigation",
+							"specialization": "Sea",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Outdoor/Exploration",
+						"Technical",
+						"Vehicle"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "b9ad4234-b081-4fe1-aff4-6484f8f061a7",
+					"based_on_id": "ff9d09a8-a719-46ad-8c81-a4e1df4cf924",
+					"based_on_hash": "ccYbHKPjDwWeV7awobWCB6tpO2hSAtQTpaJnhtQuPX8",
+					"name": "Teaching",
+					"reference": "B224",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Scholarly",
+						"Social"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "6a73d97e-2d8f-48d2-af21-fe33b6f4a1f5",
+					"based_on_id": "f818e0a2-a332-4792-b154-49dade954638",
+					"based_on_hash": "OTTebUEcnCdw++PEgwIiuhIxmcQJoNetVEDR7So9wlg",
+					"name": "Writing",
+					"reference": "B228",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Arts/Entertainment",
+						"Scholarly"
+					]
+				}
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"id": "c195dba9-e577-45ce-9ac0-cb62ed4bba46",
+			"name": "Background",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"id": "996b978e-f800-4ccd-91c2-e6a51bb7fae7",
+					"name": "Select 5 Points",
+					"notes": "One or more Humanities or Social Sciences",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "1ec617fd-e737-4c9c-9086-887242a2a6fd",
+							"based_on_id": "9bead93f-7da1-4222-a87e-2bed3832aefe",
+							"based_on_hash": "joxA180SBrvmlAO6VaNFfm9T4vL30K1cTRw/+/gFHTc",
+							"name": "Animal Handling",
+							"reference": "B175",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Animal"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "ab7b195b-dd43-40e4-ae94-68548a4f49a8",
+							"based_on_id": "0e75293e-e099-42cf-b863-eb74ead31e04",
+							"based_on_hash": "uoAA3V6NrWgvg2P89TtN014npmUL7McpEvxfjNwwmps",
+							"name": "Area Knowledge",
+							"reference": "B176",
+							"specialization": "Earth; Lived there",
+							"difficulty": "IQ/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Geography",
+									"specialization": "Egypt",
+									"modifier": -3
+								}
+							],
+							"notes": "Location of its major cities and important sites; awareness of its major customs, ethnic groups, and languages (but not necessarily expertise); names of folk of Status 7+; and a general understanding of the economic and political situation",
+							"categories": [
+								"Everyman",
+								"Knowledge"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "8bd5dda0-671a-47dc-aca4-69a6003b538d",
+							"based_on_id": "46fcbf95-e8fd-48d5-adc3-28e9405c0d62",
+							"based_on_hash": "sjeUvHLUHa/Bm+TLS2Kn9YlsiaSxVRalkOrH8gKv8gg",
+							"name": "Driving",
+							"reference": "B188",
+							"tech_level": "",
+							"difficulty": "DX/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								},
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Driving",
+									"specialization": "Heavy Wheeled",
+									"modifier": -2
+								},
+								{
+									"type": "Skill",
+									"name": "Driving",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Vehicle"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "f055ae6b-cae7-4438-86e7-0a27825ed59d",
+							"based_on_id": "95290ab7-0129-4ce1-9f7c-a04c764b3a26",
+							"based_on_hash": "DbEs46RwDnL67pQnGa9mXqIoknzDbh56m40NsT1QTtY",
+							"name": "Guns",
+							"reference": "B198",
+							"tech_level": "",
+							"difficulty": "DX/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Guns",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Ranged Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "4116cf5e-1b46-481c-a4db-4f36c0108a76",
+							"based_on_id": "56bd0b3d-b8ff-4849-a348-c4133c06b5de",
+							"based_on_hash": "NFMGJhQ2WS6tyXT//MItIklY7dJTqKYeiTgLZVUeZt8",
+							"name": "Riding",
+							"reference": "B217",
+							"difficulty": "DX/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Animal Handling",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Animal"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"notes": [
+		{
+			"type": "note",
+			"version": 1,
+			"id": "54b09c7c-f6a4-468a-b8cf-1567af996f85",
+			"text": "The Air Force has lots of highly trained scientists, but they tend to be experts in medicine or the hard physical sciences. However, missions through the Stargate need people familiar with anthropology, linguistics, ancient history and so on - fields that the USAF hasn’t needed to understand until now. That’s where you come in."
+		}
+	]
+}

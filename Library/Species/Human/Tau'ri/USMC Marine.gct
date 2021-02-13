@@ -1,0 +1,2069 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "b238708b-ed56-4567-b4a1-3ab1b299db81",
+	"advantages": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "e7c85ba6-40aa-4381-b1b6-65084e41d59d",
+			"based_on_id": "67ea46eb-fcd0-4c60-b76a-1be42c38b521",
+			"based_on_hash": "K8neSE/WItv1dwsuOQoy3CRJ+YfhP3NwxH9S1d2Dclg",
+			"name": "Increased Dexterity",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": 20,
+			"modifiers": [
+				{
+					"type": "modifier",
+					"version": 1,
+					"id": "eef533bc-e43b-4aa3-b9da-47424141673a",
+					"based_on_id": "26b39aca-fc45-404a-9dbd-be0e55323b67",
+					"based_on_hash": "hIs1WAmZwRQI3OnMtxzJiBHv77BJavSgQKv/KRvQfWM",
+					"disabled": true,
+					"name": "No Fine Manipulators",
+					"cost_type": "percentage",
+					"cost": -40,
+					"affects": "total"
+				}
+			],
+			"reference": "B15",
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"per_level": true,
+					"attribute": "dx"
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Attribute"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "b0caa6f8-8ca7-4283-8412-791bb93e13e7",
+			"based_on_id": "01e6b5a6-d396-4011-9f2e-bc943712fac9",
+			"based_on_hash": "GwaOCbhvHwKZdoDuv7a3VO9pUs4KXusmizCmg4sRxO4",
+			"name": "Increased Health",
+			"physical": true,
+			"levels": "1",
+			"points_per_level": 10,
+			"reference": "B14",
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": 1,
+					"per_level": true,
+					"attribute": "ht"
+				}
+			],
+			"categories": [
+				"Advantage",
+				"Attribute"
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "d5cefcb2-0557-4574-b02a-47ef03cd53fc",
+			"container_type": "alternative_abilities",
+			"name": "Select 20 Points",
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "7b1d8fff-899a-4913-af76-dda455ff9f35",
+					"based_on_id": "b074474a-27f9-4d63-8f35-3be884ae5343",
+					"based_on_hash": "SougdnS6MloFNLsEDLLF09HFS4JQbR9bCaIrFA8kvP4",
+					"name": "Absolute Direction",
+					"mental": true,
+					"physical": true,
+					"base_points": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "4d892c65-d10a-4bb8-b826-495767944fb7",
+							"based_on_id": "940c9da3-6966-4ea6-9974-517614d0606b",
+							"based_on_hash": "WAX25jg/7hFv+311UEijxsnXmzwIs1oyou7O+3/6u/A",
+							"disabled": true,
+							"name": "Requires signal",
+							"reference": "B34",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "a7dc7881-4dbd-415a-8262-05f1f7d2234c",
+							"based_on_id": "12730389-6652-4df8-8b34-ad078b76e408",
+							"based_on_hash": "WOeP08HcW0s0+SvqoMUUCNg2C2ZygeNb/KNKWVaaBqE",
+							"disabled": true,
+							"name": "3D Spatial Sense",
+							"reference": "B34",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "total",
+							"features": [
+								{
+									"type": "skill_bonus",
+									"amount": 1,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "starts_with",
+										"qualifier": "piloting"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "aerobatics"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "free fall"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "hyperspace"
+									}
+								},
+								{
+									"type": "skill_bonus",
+									"amount": 2,
+									"selection_type": "skills_with_name",
+									"name": {
+										"compare": "is",
+										"qualifier": "navigation"
+									},
+									"specialization": {
+										"compare": "is",
+										"qualifier": "space"
+									}
+								}
+							]
+						}
+					],
+					"reference": "B34",
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "body sense"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "air"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "land"
+							}
+						},
+						{
+							"type": "skill_bonus",
+							"amount": 3,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "navigation"
+							},
+							"specialization": {
+								"compare": "is",
+								"qualifier": "sea"
+							}
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "6dd11f55-dff6-4598-81ca-06c0dcce42d8",
+					"based_on_id": "d9f09cca-9509-462c-9c62-cb68952bfd78",
+					"based_on_hash": "kEvo/TqJ4eWhVewHIPMwBU6Feq2QSVAusaep5XKJrHI",
+					"name": "Increased Perception",
+					"mental": true,
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"reference": "B16",
+					"features": [
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"per_level": true,
+							"attribute": "perception"
+						}
+					],
+					"categories": [
+						"Advantage",
+						"Attribute"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "50ee4794-dd78-4e49-a207-e95b3ccc6e27",
+					"based_on_id": "04171edc-4d0e-4ce3-b06f-1815e60b7488",
+					"based_on_hash": "w6bxxt4cnN9GD1T1dnXDZY5YExnNSPmv1gnb4WE7CwU",
+					"name": "Combat Reflexes",
+					"mental": true,
+					"base_points": 15,
+					"reference": "B43",
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "advantage_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Enhanced Time Sense"
+								}
+							}
+						]
+					},
+					"features": [
+						{
+							"type": "skill_bonus",
+							"amount": 1,
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "fast-draw"
+							}
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "dodge"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "parry"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 1,
+							"attribute": "block"
+						},
+						{
+							"type": "attribute_bonus",
+							"amount": 2,
+							"attribute": "fright_check"
+						}
+					],
+					"notes": "Never freeze; +6 on all IQ rolls to wake up or to recover from surprise or mental stun; Your side gets +1 to initiative rolls (+2 if you're the leader)",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "af7a332b-d4d8-409d-ac34-ff94874124e1",
+					"based_on_id": "aa97ce3a-9358-4183-874e-e8ff9f7159f3",
+					"based_on_hash": "czZAcgUSkQTFzz+cLHdYees3xS53mTBubfOtZI2SdmY",
+					"name": "Daredevil",
+					"mental": true,
+					"base_points": 15,
+					"reference": "B47",
+					"notes": "Any time you take an unnecessary risk (in the GM’s opinion), you get +1 to all skill rolls",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "e2a60ce6-081f-407d-bfb8-815043efada1",
+					"based_on_id": "c603ba10-9788-4c71-967e-be6c089b0bd2",
+					"based_on_hash": "56yd0wurrBJtJwTolJvptB+84WELZXWJoUvu4z8NvfY",
+					"name": "High Pain Threshold",
+					"physical": true,
+					"base_points": 10,
+					"reference": "B59",
+					"notes": "Never suffer shock penalties when injured; +3 on all HT rolls to avoid knockdown and stunning; +3 to resist torture",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "00efda6a-f712-4ad8-917f-cd1f8628411c",
+					"based_on_id": "25c2f293-248a-4c7b-8487-5cf5c77d572d",
+					"based_on_hash": "uB2utExMQ8f0+S+QcVpFr175RQMXhAweWnX/5/TJ6rY",
+					"name": "Military Rank",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "75ecacef-dfd5-41b5-baad-9b94937fa39a",
+							"based_on_id": "f2152f52-b337-4072-ab43-d66afcbc319e",
+							"based_on_hash": "7tMZBiCQks3eQyOxAr8yxjxsA+BbPLZ7GDN+3NL/ANk",
+							"disabled": true,
+							"name": "Replaces Status",
+							"reference": "B29",
+							"cost_type": "points",
+							"cost": 5,
+							"affects": "levels_only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "df65e5ce-3a68-4c49-b2ef-1a20bc441d85",
+							"based_on_id": "42caab58-9f7b-4911-9ef0-a47a92e63801",
+							"based_on_hash": "Uuirc0hfFJoctS+1fFBL0S8vasipYU8X4jBuHjHX+zA",
+							"disabled": true,
+							"name": "Courtesy",
+							"reference": "B29",
+							"cost_type": "points",
+							"cost": -4,
+							"affects": "levels_only"
+						}
+					],
+					"reference": "B29",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "ea192b9c-9147-49c0-872c-daa8317a2168",
+					"based_on_id": "707e522a-2fd6-412e-ac81-b44721b44de6",
+					"based_on_hash": "heE3Lrnuz5b+qnFp1WLXoPTQMb30rF0NuRaMxBvaQ/U",
+					"name": "Night Vision",
+					"physical": true,
+					"levels": "1",
+					"points_per_level": 1,
+					"reference": "B71",
+					"categories": [
+						"Advantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "21975d15-3add-4eb7-9566-dcc6b2679cd0",
+					"based_on_id": "38652476-0c95-4a35-8068-3f96a25d2f09",
+					"based_on_hash": "6RsDbX0tO0vgsjasKc7WWjpwXX5Nuz4AbAbzZVudDVo",
+					"name": "Damage Resistance",
+					"physical": true,
+					"exotic": true,
+					"levels": "1",
+					"points_per_level": 5,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "c6cda2c3-e0d5-4d99-b72d-0059dfe523de",
+							"based_on_id": "71e0ea7a-bb0e-409d-b01d-aa247b4e66f6",
+							"based_on_hash": "4dRzZ3wNowQp2q3VKNFRcBua8ItF3pLlAo7xLzoz0Lc",
+							"disabled": true,
+							"name": "Force Field",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "3fc3e005-6cfe-4282-bb10-e49869a4bd45",
+							"based_on_id": "a5e89aca-0b61-483e-8ae3-d6086856cf9a",
+							"based_on_hash": "fLTGqPx1y/KW9Y6Lwnjr+xdUB+nYxcLaD9EeOecbC2A",
+							"disabled": true,
+							"name": "Hardened",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": 20,
+							"affects": "total",
+							"levels": 1
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "9fdd8910-913a-4d50-abbb-31aac885cdd4",
+							"based_on_id": "0377b71f-5bfe-44a7-b1a0-db38c7952845",
+							"based_on_hash": "547V961jIgKARLc5IkeTAqgqgSp2EXXriJUTAlOSYtU",
+							"disabled": true,
+							"name": "Absorption",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": 80,
+							"affects": "total",
+							"notes": "Enhances @Trait@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "f365daa9-4cb6-4053-8e4a-33115987169b",
+							"based_on_id": "db27da09-5815-4776-9af9-6d9741d8e52a",
+							"based_on_hash": "AqzcBkR2yUlgqDUuy7XdNBAgoeYXW2MA4qiMCzSBn/g",
+							"disabled": true,
+							"name": "Absorption",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": 80,
+							"affects": "total",
+							"notes": "Healing only"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "7f9fe045-a37d-475c-9455-d6df08080f03",
+							"based_on_id": "0e4c391b-1076-40f2-92b6-c5d3c60b78fd",
+							"based_on_hash": "2zq1Dpjx2vBE7ZYGb1gxdebtiZ4ZEbsvpi57EhsN+ic",
+							"disabled": true,
+							"name": "Absorption",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total",
+							"notes": "Enhances any trait"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "13975eda-706f-4ef7-a791-3d54e47b603d",
+							"based_on_id": "8b422514-296a-4b7c-b350-6b7e7d2be0e9",
+							"based_on_hash": "96ZDzxnvmOn7TOYL3qNOOWNf74B6rN0I8OgWW4u/2fA",
+							"disabled": true,
+							"name": "Reflection",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": 100,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "05a6a59b-6b3d-4e92-958b-8042d57e572a",
+							"based_on_id": "419ab96d-ea87-4894-b6d8-a6ee32a5d416",
+							"based_on_hash": "xBWRIBilDY6DC2SapMhM4hm+M9vmtByYMZ/DU/weXFY",
+							"disabled": true,
+							"name": "Bane",
+							"reference": "H14",
+							"cost_type": "points",
+							"cost": -1,
+							"affects": "total",
+							"notes": "@Rare@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b9ee91b7-41f6-4af3-ac99-4d8d1a861c9a",
+							"based_on_id": "a8c6d43d-430e-4773-a64c-200f75009e65",
+							"based_on_hash": "AJXWjl2LSPshg65Ue9+QRYLU6qG3c5inikPCavtYa/Q",
+							"disabled": true,
+							"name": "Bane",
+							"reference": "H14",
+							"cost_type": "percentage",
+							"cost": -5,
+							"affects": "total",
+							"notes": "@Occasional@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "76e15a2e-d3ff-446c-b96b-9d8167035ee9",
+							"based_on_id": "e9503abd-7621-42c4-8ced-3981ec7c6d9a",
+							"based_on_hash": "xVNQpJEGcHIO9dCbyQGyocddfQrS3rCbOjyvaCcmtxk",
+							"disabled": true,
+							"name": "Bane",
+							"reference": "H14",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total",
+							"notes": "@Common@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "7d504cd7-26e3-405b-b197-895f67a55e46",
+							"based_on_id": "1585a884-94e2-4152-b7b7-d3b6cc253c58",
+							"based_on_hash": "vPwVwwSxfZZ5GBEqk/M8aBeNkjaY4GNtQvMB9W1mZKU",
+							"disabled": true,
+							"name": "Bane",
+							"reference": "H14",
+							"cost_type": "percentage",
+							"cost": -15,
+							"affects": "total",
+							"notes": "@Very Common@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "2da16013-16ee-47e3-a064-cec2c2fa5fe8",
+							"based_on_id": "131c5627-2f5a-4f3f-8a52-08417003bc95",
+							"based_on_hash": "MBQfnhWuI7VxR2sjl8cHgviFXsbwNVKeZeT0X2bxB9w",
+							"disabled": true,
+							"name": "Directional",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total",
+							"notes": "Front"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "2c77bd7e-bff0-4695-bdf1-249e68377861",
+							"based_on_id": "132e7d43-7920-45f5-bcde-036029aa49f2",
+							"based_on_hash": "gb4HFGQCgem+h/Q4s5TjCfbbwu0hP3CYhS1Zo7qR3b8",
+							"disabled": true,
+							"name": "Flexible",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "3ac837c0-6f75-4526-9e86-eb4912572d5b",
+							"based_on_id": "d9e01c00-3ac2-4f4d-ae5f-45b34441df13",
+							"based_on_hash": "Z8ms/FST2ym0UG9CcHH+7j1fIIBJRmYKruIpLwMmBC4",
+							"disabled": true,
+							"name": "Limited",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total",
+							"notes": "@Very Common Attack Form@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "8f3f14a8-85f8-4816-9bfc-59a7ceca8d83",
+							"based_on_id": "72f08aac-bc4a-43fe-875b-8747b7397bec",
+							"based_on_hash": "NKMQwVDTKzFmmKB0nC5j+Am//KHlEyAcBZv3LS4+nsA",
+							"disabled": true,
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -20,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "58105753-48a0-42c4-93d5-fd64f5c66c0e",
+							"based_on_id": "13410164-cee1-4956-832c-47bcf41fdab8",
+							"based_on_hash": "1DSl4Qc/vPpyAV1FfoHhvfgcF0W3bkSyPgf8wVV9fWU",
+							"disabled": true,
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "99dff85a-a360-4455-90be-b62d284a8b0b",
+							"based_on_id": "9ad2a005-947f-4ef9-ba99-ed88a4adaa49",
+							"based_on_hash": "jbHWPRefzm5mdvx/FkGTd19TFJM3eetvP4TSRvvZKnY",
+							"disabled": true,
+							"name": "Directional",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total",
+							"notes": "@Direction: Back, Right, Left, Top or Underside@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "7e2d913d-d20f-469e-8f5f-1e43d126aa46",
+							"based_on_id": "34ffce90-cba0-4d1a-a8ce-b3e6b12a51e3",
+							"based_on_hash": "ztA6RfDgY3N8N4ZChkMPf1lhBjhE6OPLBk9/grheujw",
+							"disabled": true,
+							"name": "Limited",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total",
+							"notes": "@Common Attack Form@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "753b2fda-ed53-4c24-9522-cd027ccdf3b0",
+							"based_on_id": "10940926-bf24-4984-a984-d974384f0874",
+							"based_on_hash": "z0va3tJxZjw65mAkC9AGcvRovCxKi6sDn5MKGQhiW1U",
+							"name": "Tough Skin",
+							"cost_type": "percentage",
+							"cost": -40,
+							"affects": "total",
+							"notes": "Effects that just require skin contact or a scratch ignore this DR"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "74805850-2777-4c6e-9157-81521ceafd57",
+							"based_on_id": "db046fce-bac2-4fae-98d4-ee66925c0e9e",
+							"based_on_hash": "g2ZBEDdikZx3pJ+lpJZpoqpyqd4UBxBiGbDsCy+3SCs",
+							"disabled": true,
+							"name": "Limited",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": -60,
+							"affects": "total",
+							"notes": "@Occasional Attack Form@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "aafac852-954b-4b66-912b-a561f01dca3c",
+							"based_on_id": "b112e7ab-adac-40ef-a544-598ae0f7436f",
+							"based_on_hash": "xo4doCIjdmUWYpEP2L7WdPZ24u+fbWFH+GAWsU2S/Go",
+							"disabled": true,
+							"name": "Ablative",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -80,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "6a0411c6-2aba-4bd3-9b0b-b01bf674e3db",
+							"based_on_id": "3b761122-5da1-46dd-992c-2f9df40890cb",
+							"based_on_hash": "YVsn2uD7oDZ4UrxRYsVV7tc9RsnLQmhbpB67FbvwEAM",
+							"disabled": true,
+							"name": "Limited",
+							"reference": "B46",
+							"cost_type": "percentage",
+							"cost": -80,
+							"affects": "total",
+							"notes": "@Rare Attack Form@"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "edd44d97-f1d7-4073-8394-b5801aadb326",
+							"based_on_id": "0ed89045-94df-4ab0-ac26-53103a2ad43f",
+							"based_on_hash": "ta6YF1uzXID7ujmh1Bmp0JZN2ah3hbIr5fFzUTL5FhU",
+							"disabled": true,
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost_type": "percentage",
+							"cost": 10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "b3496d9c-6031-48f9-b91c-d1e78a595354",
+							"based_on_id": "a1baddab-14e3-402e-a209-1eee48ba98ec",
+							"based_on_hash": "sR+cYVH+FQ/1nPs9LDF4AH26Q9d4OmJkNto3WMsN7xk",
+							"disabled": true,
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost_type": "percentage",
+							"cost": 50,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "248d8c6b-f51b-4e22-98d5-eb8ac072fefc",
+							"based_on_id": "b1b407f3-24ca-4beb-8f3a-d362891e5af9",
+							"based_on_hash": "GM7pZNXydwq5qiFE8x3M2JHWXiORsMGm+Zyb6U0Tl/4",
+							"disabled": true,
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"cost_type": "percentage",
+							"cost": 0,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e2c353f4-86fb-4149-b493-b5c3c0f5aad9",
+							"based_on_id": "a48b115e-bf63-41f8-84cd-3b6d1e41653e",
+							"based_on_hash": "AaiZDT+5OX28KEBSAKVs1saAZUldnA2A9j/Kop6Igbw",
+							"disabled": true,
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost_type": "percentage",
+							"cost": -10,
+							"affects": "total"
+						}
+					],
+					"reference": "B47",
+					"features": [
+						{
+							"type": "dr_bonus",
+							"amount": 1,
+							"per_level": true,
+							"location": "full_body_except_eyes"
+						}
+					],
+					"categories": [
+						"Advantage"
+					]
+				}
+			]
+		},
+		{
+			"type": "advantage_container",
+			"version": 1,
+			"id": "14f1e49e-c116-4017-98fa-8d355adf4386",
+			"container_type": "alternative_abilities",
+			"name": "Select -20 Points",
+			"open": false,
+			"children": [
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "2e648f35-ef8e-495f-ae96-d79382c4c31e",
+					"based_on_id": "a2be5cfc-59b7-4106-a492-221b15e4491c",
+					"based_on_hash": "ahH7SQ8HFsHctWTAVEhGlot1nH0Rk2x1YTFQAAYlpTI",
+					"name": "Code of Honor (Soldier's)",
+					"mental": true,
+					"base_points": -10,
+					"reference": "B127",
+					"notes": "An officer should be tough but fair, lead from the front, and look out for his men; an enlisted man should look out for his buddies and take care of his kit. Every soldier should be willing to fight and die for the honor of his unit, service, and country; follow orders; obey the “rules of war”; treat an honorable enemy with respect (a dishonorable enemy deserves a bullet); and wear the uniform with pride.",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "ff572f53-b0d9-4b55-b68e-9638f454aa97",
+					"based_on_id": "9255a0b7-679a-44ab-b99a-15e5ea655896",
+					"based_on_hash": "wIhN5Ul8CxNKkgTSXxVyom2ep4OqTtIbh+JdVEPPcL4",
+					"name": "Compulsive Carousing",
+					"mental": true,
+					"base_points": -5,
+					"cr": 12,
+					"reference": "B128",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"amount": 1,
+							"situation": "from like-minded extroverts"
+						},
+						{
+							"type": "reaction_bonus",
+							"amount": -1,
+							"situation": "or worse from sober-minded citizens (GM discretion)"
+						}
+					],
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "45d347c5-9cc8-451d-8146-8c2966742add",
+					"based_on_id": "16db88e5-8a55-412b-b678-affe7a3add70",
+					"based_on_hash": "02ywkEgM1KCw/7aB9IuQmp9vhi4koLEwHSlbJnUVxYM",
+					"name": "Compulsive Gambling",
+					"mental": true,
+					"base_points": -5,
+					"cr": 12,
+					"reference": "B128",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "6b270511-f108-402e-a561-b045b00b439a",
+					"based_on_id": "96247355-0a89-4ae0-a89e-be3a97d31591",
+					"based_on_hash": "yrMxSZbzy++EvG0AXf1zrUPpU0G58475xcW/FDn7NQQ",
+					"name": "Impulsiveness",
+					"mental": true,
+					"base_points": -10,
+					"cr": 12,
+					"reference": "B139",
+					"notes": "Make a self-control roll whenever it would be wise to wait and ponder. If you fail, you must act",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "8c1f3dfa-2e34-4599-8adc-a7017208905e",
+					"based_on_id": "5e6823d9-f372-4b29-ab16-aea1323df21d",
+					"based_on_hash": "3JuBa9tVx1MNYg2KnUYAwJjajcJnUaFZwnTZsXsP8Ek",
+					"name": "Overconfidence",
+					"mental": true,
+					"base_points": -5,
+					"cr": 12,
+					"reference": "B148",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"amount": 2,
+							"situation": "from young or naive individuals who believe you are as good as you say you are"
+						},
+						{
+							"type": "reaction_bonus",
+							"amount": -2,
+							"situation": "from experienced NPCs"
+						}
+					],
+					"notes": "You must make a self-control roll any time the GM feels you show an unreasonable degree of caution. If you fail, you must go ahead as though you were able to handle the situation!",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "dd5e94f9-5dde-430a-bf48-aad1d43ef5cb",
+					"based_on_id": "a31d3c41-54dc-4bdb-8743-976a1b5cbeb9",
+					"based_on_hash": "FTS4OCUsOPxM+zZ3wrd+mAEg8iXkgOo0FY8ehD4yGiQ",
+					"name": "Sense of Duty",
+					"mental": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "64c88fa5-68d6-44ba-9c7a-344cf4812f69",
+							"based_on_id": "de47158b-455d-4448-8055-86065b81d6d1",
+							"based_on_hash": "WjsWuvKr7HEQGNLiAJ2Gpk0vS16J6cBfCZIad0CMEnA",
+							"disabled": true,
+							"name": "Friends and Companions",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "46f85ac0-dff1-49fe-b508-d6b22e4af325",
+							"based_on_id": "8fde1c7b-7271-4b9b-9032-8551dde325a8",
+							"based_on_hash": "sJNYn9mgnnEMBMeh4bKLsMVWZtosxIebdKtTHubH+6s",
+							"name": "Comrades",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "a7da1f07-c683-451a-81d4-7d68114f380f",
+							"based_on_id": "89ec98d8-237b-4ab6-82e5-f9767592c065",
+							"based_on_hash": "bfHObGHwkzMZT2/ypaQAH5PcljWActOJh5BQuu0bsm0",
+							"disabled": true,
+							"name": "@Individual@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "372a275f-e230-4eab-b3bc-6e1fc49a2cff",
+							"based_on_id": "0daad494-07fe-4b61-a1fe-ab5e198b6411",
+							"based_on_hash": "+mNP1QWRd4ag8jTrKUzzvdke0Zam6vkz5mlniy63QMo",
+							"disabled": true,
+							"name": "@Large Group@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e339d7b6-5eb4-49b0-ad4e-bef25a1f230c",
+							"based_on_id": "103f5c35-d3d6-4f0f-9336-447062d5c050",
+							"based_on_hash": "vzUw9Yibr4SF6ejYaee9uPwFMtb3dDylb4ftrdNLWr8",
+							"disabled": true,
+							"name": "@Entire Race@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "0580c633-16de-49fd-b2eb-0a76cd81848c",
+							"based_on_id": "721ee069-0e87-46c8-9638-0f2dee3142e6",
+							"based_on_hash": "Bq7WsSHB60v/roE0I9HZia/BCNn+O0S+SrItyXf6Hpw",
+							"disabled": true,
+							"name": "Every Living Being",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						}
+					],
+					"reference": "B153",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "f60bc610-ea32-43b4-a6ea-7b341ca00f04",
+					"based_on_id": "a31d3c41-54dc-4bdb-8743-976a1b5cbeb9",
+					"based_on_hash": "FTS4OCUsOPxM+zZ3wrd+mAEg8iXkgOo0FY8ehD4yGiQ",
+					"name": "Sense of Duty",
+					"mental": true,
+					"modifiers": [
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "44a735c4-db2a-42e5-a341-b46a5b81be0c",
+							"based_on_id": "de47158b-455d-4448-8055-86065b81d6d1",
+							"based_on_hash": "WjsWuvKr7HEQGNLiAJ2Gpk0vS16J6cBfCZIad0CMEnA",
+							"disabled": true,
+							"name": "Friends and Companions",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "1b70adf8-69ad-4645-a480-95809b280a4d",
+							"based_on_id": "8fde1c7b-7271-4b9b-9032-8551dde325a8",
+							"based_on_hash": "sJNYn9mgnnEMBMeh4bKLsMVWZtosxIebdKtTHubH+6s",
+							"disabled": true,
+							"name": "@Small Group@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -5,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "4971028d-22dd-4e6b-a90f-b4dada7dfbb2",
+							"based_on_id": "89ec98d8-237b-4ab6-82e5-f9767592c065",
+							"based_on_hash": "bfHObGHwkzMZT2/ypaQAH5PcljWActOJh5BQuu0bsm0",
+							"disabled": true,
+							"name": "@Individual@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -2,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "e8762063-af86-4299-999f-80d0b0ac85e8",
+							"based_on_id": "0daad494-07fe-4b61-a1fe-ab5e198b6411",
+							"based_on_hash": "+mNP1QWRd4ag8jTrKUzzvdke0Zam6vkz5mlniy63QMo",
+							"name": "Nation",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -10,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "99064955-4cb7-4d6b-a4b5-7718d9b26c32",
+							"based_on_id": "103f5c35-d3d6-4f0f-9336-447062d5c050",
+							"based_on_hash": "vzUw9Yibr4SF6ejYaee9uPwFMtb3dDylb4ftrdNLWr8",
+							"disabled": true,
+							"name": "@Entire Race@",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -15,
+							"affects": "total"
+						},
+						{
+							"type": "modifier",
+							"version": 1,
+							"id": "c430ffc2-2e59-48bb-bb60-9f55e59d9bb8",
+							"based_on_id": "721ee069-0e87-46c8-9638-0f2dee3142e6",
+							"based_on_hash": "Bq7WsSHB60v/roE0I9HZia/BCNn+O0S+SrItyXf6Hpw",
+							"disabled": true,
+							"name": "Every Living Being",
+							"reference": "B153",
+							"cost_type": "points",
+							"cost": -20,
+							"affects": "total"
+						}
+					],
+					"reference": "B153",
+					"categories": [
+						"Disadvantage"
+					]
+				},
+				{
+					"type": "advantage",
+					"version": 1,
+					"id": "865ad707-8c7d-45cd-b507-c935cf8163f8",
+					"based_on_id": "5452dcb5-90b1-424d-bab5-51ca5830fede",
+					"based_on_hash": "pi4uNlamfMJ2sGwbg1zhg4Y0R8yARexx4juAPvglLAw",
+					"name": "Stubbornness",
+					"mental": true,
+					"base_points": -5,
+					"reference": "B157",
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"amount": -1,
+							"situation": "from others"
+						}
+					],
+					"categories": [
+						"Disadvantage"
+					]
+				}
+			]
+		}
+	],
+	"skills": [
+		{
+			"type": "skill_container",
+			"version": 1,
+			"id": "da8ae4eb-bad2-44b5-8f63-be406c7b0eb4",
+			"name": "Primary",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "73325d1a-aaad-4ec0-8a7c-0af0432f0d61",
+					"based_on_id": "a4194102-33fa-43fc-ac8e-14454cf89fc5",
+					"based_on_hash": "B136Cbxvfnm82eB1VOZpL5OaQMSjWrny2+McOoeg6nc",
+					"name": "Brawling",
+					"reference": "B182",
+					"difficulty": "DX/E",
+					"points": 2,
+					"features": [
+						{
+							"type": "weapon_bonus",
+							"amount": 1,
+							"per_level": true,
+							"selection_type": "weapons_with_required_skill",
+							"name": {
+								"compare": "is",
+								"qualifier": "Brawling"
+							},
+							"level": {
+								"compare": "at_least",
+								"qualifier": 2
+							}
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Melee Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "b377b178-980f-417e-a61b-567cd8c091b3",
+					"based_on_id": "c699cfb8-f28b-4996-a990-66ab6a1fd3cd",
+					"based_on_hash": "Hl/2hVo0AkYQofzOUOsR9qNejIzNtKAeaDjP9lAFi0s",
+					"name": "Guns",
+					"reference": "B198",
+					"specialization": "Grenade Launcher",
+					"tech_level": "",
+					"difficulty": "DX/E",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "79dfa825-2987-4209-93d7-24f1f10188a4",
+					"based_on_id": "89140ff6-f145-403e-bb81-82adfe499cc0",
+					"based_on_hash": "V9EainlBghROMIkiJd8AfAb2QOJvVq+O8a6DO4612iI",
+					"name": "Guns",
+					"reference": "B198",
+					"specialization": "Light Machine Gun",
+					"tech_level": "",
+					"difficulty": "DX/E",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Rifle",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "58b3965e-c6f5-4f42-bb97-17ee22c25f5f",
+					"based_on_id": "f4078925-07f5-439e-8ddf-7e41e717ccbf",
+					"based_on_hash": "fHUAKxoda6fR5j6ev3VZqicdmW+s0v8zAEL2aFlI8O4",
+					"name": "Guns",
+					"reference": "B198",
+					"specialization": "Rifle",
+					"tech_level": "",
+					"difficulty": "DX/E",
+					"points": 4,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Grenade Launcher",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Gyroc",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Anti-Armor Weapon",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Light Machine Gun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Musket",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Pistol",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Beam Weapons",
+							"specialization": "Rifle",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Shotgun",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Guns",
+							"specialization": "Submachine Gun",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "6ce6f89b-5229-45d3-a658-5f47600aae12",
+					"based_on_id": "720f2ca7-3e5c-48e2-a579-8df0004c0677",
+					"based_on_hash": "OAvyieaOWxQPQsJ+qxvO0fnDVzXakUTOAg4yhhoXHQo",
+					"name": "Navigation",
+					"reference": "B211",
+					"specialization": "Land",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Cartography",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Mathematics",
+							"specialization": "Surveying",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Navigation",
+							"specialization": "Air",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Navigation",
+							"specialization": "Sea",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Outdoor/Exploration",
+						"Technical",
+						"Vehicle"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "336eb585-46d8-49c0-a508-78709ffdcea8",
+					"based_on_id": "fb0b45ea-dbba-4b5e-a2e0-428055b39521",
+					"based_on_hash": "kL4sQq+dSNBdnnFf4toZ2kShQP0Wo2ZQ+j9TnUuZ0Hs",
+					"name": "Savoir-Faire",
+					"reference": "B218",
+					"specialization": "Military",
+					"difficulty": "IQ/E",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Knowledge",
+						"Military",
+						"Social"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "6c3023bb-4329-42ba-8e19-ab03b31b3cf1",
+					"based_on_id": "205a6d44-71e3-4305-b25f-950a3ac004cd",
+					"based_on_hash": "/b/DKpDrjNSU4jbMzpq5E+Lh3P/v0aHYoIThSZFqsrI",
+					"name": "Tactics",
+					"reference": "B224",
+					"difficulty": "IQ/H",
+					"points": 8,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -6
+						},
+						{
+							"type": "Skill",
+							"name": "Strategy",
+							"modifier": -6
+						}
+					],
+					"categories": [
+						"Military",
+						"Police"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "134b994c-d9cf-4f4a-810d-55fb6f8f0ef5",
+					"based_on_id": "f320e945-5889-4a76-8230-2d04b8ea500c",
+					"based_on_hash": "PylJgRp27P1AI54puVy8TFtrYGaJsVHC4vouOtwMlE4",
+					"name": "Throwing",
+					"reference": "B226",
+					"difficulty": "DX/A",
+					"points": 2,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Dropping",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Athletic",
+						"Combat/Weapon",
+						"Ranged Combat"
+					]
+				}
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"id": "a5bf72e6-7291-4fa0-8473-7c57fe920b59",
+			"name": "Secondary",
+			"open": true,
+			"children": [
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "ccce7cb7-08ab-469c-96de-b4ac81deb687",
+					"based_on_id": "062a6197-cdc6-42b6-8cf1-3cbf39b9f552",
+					"based_on_hash": "OsQFY5+60axJIRkEt8ZVuLifnYtHVsmkS67ZKyGwJp4",
+					"name": "Boating",
+					"reference": "B180",
+					"specialization": "Motorboat",
+					"tech_level": "",
+					"difficulty": "DX/A",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Boating",
+							"specialization": "Large Powerboat",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Boating",
+							"specialization": "Sailboat",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Boating",
+							"specialization": "Unpowered",
+							"modifier": -3
+						}
+					],
+					"categories": [
+						"Vehicle"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "ecd31eb8-3cd7-4e58-99f3-9ece4636edaa",
+					"based_on_id": "c1e00b90-9dea-407e-8647-b5984263909b",
+					"based_on_hash": "h3IPhYNkROJDRfBcPquRLSZSPPAE3tAkICM2mCnwddw",
+					"name": "Explosives",
+					"reference": "B194",
+					"specialization": "Demolition",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Combat",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Mining",
+							"modifier": -3
+						},
+						{
+							"type": "Skill",
+							"name": "Explosives",
+							"specialization": "Underwater Demolition",
+							"modifier": -2
+						},
+						{
+							"type": "Skill",
+							"name": "Explosives",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Criminal/Street",
+						"Military",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "a3fbee98-41aa-44b1-8de3-53a2f1ff725b",
+					"based_on_id": "3d9e9640-dfd0-4a65-b82c-b312974c75e9",
+					"based_on_hash": "ULeDV7ZrmTyXLFJnioZi9kh1Rb0yia7pxD57BRJd9Xw",
+					"name": "Electronics Operation",
+					"reference": "B189",
+					"specialization": "Communications",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Repair",
+							"specialization": "Communications",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Engineer",
+							"specialization": "Electronics",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "c5758e8b-5c9a-4e7b-bd0c-0de36b2c7fa4",
+					"based_on_id": "2856d9a0-b914-4002-8d7b-91f18afd1148",
+					"based_on_hash": "RVYXdKZu5prC2IaDZevGI+6Ix3nD/pavQ0okf6I7q2Y",
+					"name": "First Aid",
+					"reference": "B195",
+					"tech_level": "",
+					"difficulty": "IQ/E",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Esoteric Medicine"
+						},
+						{
+							"type": "Skill",
+							"name": "Physician"
+						},
+						{
+							"type": "Skill",
+							"name": "Veterinary",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Everyman",
+						"Medical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "235525a9-cd5e-4ad8-bdb7-44fd79b1b162",
+					"based_on_id": "5821d810-3323-4025-b7f1-58ea8b585d05",
+					"based_on_hash": "eLQGX3a0izicydDOWoTtn6auouoKyOshHL9sl5YUOiY",
+					"name": "Photography",
+					"reference": "B213",
+					"tech_level": "",
+					"difficulty": "IQ/A",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "IQ",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Electronics Operation",
+							"specialization": "Media",
+							"modifier": -5
+						}
+					],
+					"categories": [
+						"Arts/Entertainment",
+						"Spy",
+						"Technical"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "634cfdcd-a06f-4b12-8f50-f403163974b2",
+					"based_on_id": "10cd25e3-b006-45c9-803d-f0c8310e3dc2",
+					"based_on_hash": "oLfe/2KCvTAQ09OmpGB588OP9KG05C2JDH80kh96b7A",
+					"name": "Spear",
+					"reference": "B208",
+					"difficulty": "DX/A",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "DX",
+							"modifier": -5
+						},
+						{
+							"type": "Skill",
+							"name": "Polearm",
+							"modifier": -4
+						},
+						{
+							"type": "Skill",
+							"name": "Staff",
+							"modifier": -2
+						}
+					],
+					"categories": [
+						"Combat/Weapon",
+						"Melee Combat"
+					]
+				},
+				{
+					"type": "skill",
+					"version": 1,
+					"id": "4faf2d9a-0240-491e-ba71-c33d4afe386a",
+					"based_on_id": "ca2a4b51-514e-4095-8fb8-0f5ec0f3e975",
+					"based_on_hash": "svMm9FBlPxPrA7ofa8zXmzyYs937+ej3Gg/9S9LKtIc",
+					"name": "Swimming",
+					"reference": "B224",
+					"encumbrance_penalty_multiplier": 2,
+					"difficulty": "HT/E",
+					"points": 1,
+					"defaults": [
+						{
+							"type": "HT",
+							"modifier": -4
+						}
+					],
+					"categories": [
+						"Athletic",
+						"Outdoor/Exploration"
+					]
+				}
+			]
+		},
+		{
+			"type": "skill_container",
+			"version": 1,
+			"id": "654f1f98-a9af-4d0c-8891-15c405d8abff",
+			"based_on_id": "ddb376a2-1430-4a27-8849-8244490d8294",
+			"based_on_hash": "m5KYBVjEuFURii7cEupDWTnOUeqPtNWQj3Kly8cbTu8",
+			"name": "Background",
+			"open": true,
+			"children": [
+				{
+					"type": "skill_container",
+					"version": 1,
+					"id": "8e46d210-e821-4669-9ec4-d8762d5bf043",
+					"based_on_id": "1ab8479d-e545-4237-a4b0-efd6c51217fb",
+					"based_on_hash": "fXDboyWJ2WP40SsWmxDS1Bi7l8uEhJDe1tlD7gpMXAk",
+					"name": "Select 4 Points",
+					"open": false,
+					"children": [
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "986df513-56c9-4305-afa2-c0dc84c51830",
+							"based_on_id": "4d7da1a6-b66c-4fbb-bf48-28017686cced",
+							"based_on_hash": "dbrWKCSnjuOP/uQKnhB6ez9C9499UrNz8Ky4VLZp9Fo",
+							"name": "Armoury",
+							"reference": "B178",
+							"specialization": "Small Arms",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Small Arms",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Military",
+								"Repair/Maintainance"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "d3eb02c6-07c6-4b52-a515-fe9a56bd8666",
+							"based_on_id": "d5e0edda-df5c-4aa0-853f-a1a726b5449e",
+							"based_on_hash": "XwqRD8uAdWXLBGmztkzCv7HNEi44qNyBXQJzfVfGV3w",
+							"name": "Armoury",
+							"reference": "B178",
+							"specialization": "Body Armor",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Engineer",
+									"specialization": "Body Armor",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Military",
+								"Repair/Maintainance"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "e08a69a7-3e1d-4622-b452-495ff29ba654",
+							"based_on_id": "fbb12d5d-4a5b-41d8-b27f-b643715449eb",
+							"based_on_hash": "UsU73nvXeg75CDler8JxWevjRIYUBV7lvpxjiiihhDc",
+							"name": "Artist",
+							"reference": "B179",
+							"difficulty": "IQ/H",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -6
+								},
+								{
+									"type": "Skill",
+									"name": "Artist",
+									"modifier": -6
+								}
+							],
+							"categories": [
+								"Arts/Entertainment"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "8739fbad-75a8-497a-ac90-50d96c440814",
+							"based_on_id": "b6faf01a-9a09-4f8c-b96f-92ef88e2f96e",
+							"based_on_hash": "A5ujKXdijxiUDchuEJlKRBNVwZDCUrkGBJkQolOB+IA",
+							"name": "Camouflage",
+							"reference": "B183",
+							"difficulty": "IQ/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"modifier": -2
+								}
+							],
+							"categories": [
+								"Military",
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "ecd70e3b-d1f5-41d6-9b5d-510fd871f5c1",
+							"based_on_id": "622b502d-9fa0-4751-861d-987732fe07f9",
+							"based_on_hash": "fOoFsdXi1QZ4MHURKpN9DvlIgKmBPi6zyO40lksA+l0",
+							"name": "Climbing",
+							"reference": "B183",
+							"encumbrance_penalty_multiplier": 1,
+							"difficulty": "DX/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "DX",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Athletic",
+								"Criminal/Street",
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "a84fe168-c1ce-4aa9-a076-88b0bb36e378",
+							"based_on_id": "456d709b-62c3-45ae-8ed9-695bd76c3e49",
+							"based_on_hash": "Ezl+NbEEzE1MY+5zXNJhayQ/UuOnBQk+O23J27JBUWg",
+							"name": "Knife",
+							"reference": "B208",
+							"difficulty": "DX/E",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Skill",
+									"name": "Force Sword",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Main-Gauche",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Shortsword",
+									"modifier": -3
+								},
+								{
+									"type": "DX",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Combat/Weapon",
+								"Melee Combat"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "0d76a2cb-9d36-42a7-8976-e28db1fdd58d",
+							"based_on_id": "100a396f-8140-4024-99e8-6810cd356a50",
+							"based_on_hash": "o2wdqzkionIMNlv1J0Sog/ix6szb1vjNodAFRIDTAf0",
+							"name": "Intimidation",
+							"reference": "B202",
+							"difficulty": "Will/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Will",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Acting",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Criminal/Street",
+								"Police",
+								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "06b4e4da-4920-4acc-a0ae-0359bee021e1",
+							"based_on_id": "04d61002-ef07-488c-ad59-1537e567f778",
+							"based_on_hash": "Xf4aqTOHv3n3VH+lAcSCRhgpXOi1RdPdZYROGDMwzv0",
+							"name": "Leadership",
+							"reference": "B204",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Military",
+								"Social"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "5c0e4c02-7af1-4c25-b722-8e83ffab4ba4",
+							"based_on_id": "db1346f0-f6ef-4522-b737-5eafb2731cde",
+							"based_on_hash": "wqrBmnJJ1JZrWIk2OUKMy00+z6lEIW8f/RWbwEFZ3LA",
+							"name": "Stealth",
+							"reference": "B222",
+							"encumbrance_penalty_multiplier": 1,
+							"difficulty": "DX/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "DX",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Criminal/Street",
+								"Police",
+								"Spy"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "9dd58afe-904c-45d4-984b-f100ad42d9ec",
+							"based_on_id": "f5ddc8f6-e305-4398-9fd3-f1ea04c99f05",
+							"based_on_hash": "AKg5tZpp7rO//ivR38AvaW3JsueId6mSazDACYkRik8",
+							"name": "Survival",
+							"reference": "B223",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -3
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Bank",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Deep Ocean Vent",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Fresh-Water Lake",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Open Ocean",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Reef",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "River/Stream",
+									"modifier": -4
+								},
+								{
+									"type": "Skill",
+									"name": "Survival",
+									"specialization": "Tropical Lagoon",
+									"modifier": -4
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "e0944360-2f2f-40b9-b9d3-a5c4ebcba02c",
+							"based_on_id": "22ebdf47-f0c2-41b0-8ef0-acd108753bc5",
+							"based_on_hash": "CF/c3kKSyRR3nb98CWSfPoDzAp4X6iH6emjsNesJUu8",
+							"name": "Tracking",
+							"reference": "B226",
+							"difficulty": "Per/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "Per",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Naturalist",
+									"modifier": -5
+								}
+							],
+							"categories": [
+								"Outdoor/Exploration"
+							]
+						},
+						{
+							"type": "skill",
+							"version": 1,
+							"id": "c1e94e5b-85e3-4ee4-acef-c43bfa666803",
+							"based_on_id": "5ddba231-d3ed-4dcf-bf76-192402696283",
+							"based_on_hash": "nEeqQ6SKh7I0UtFm/X7uuB09QNYKvCFrt6NmsgaPhcM",
+							"name": "Traps",
+							"reference": "B226",
+							"tech_level": "",
+							"difficulty": "IQ/A",
+							"points": 1,
+							"defaults": [
+								{
+									"type": "IQ",
+									"modifier": -5
+								},
+								{
+									"type": "Skill",
+									"name": "Lockpicking",
+									"modifier": -3
+								}
+							],
+							"categories": [
+								"Criminal/Street",
+								"Military"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"notes": [
+		{
+			"type": "note",
+			"version": 1,
+			"id": "953783e9-6b74-4c7d-89fb-0cf665b152ae",
+			"text": "Marines are used to spearhead (or conduct) amphibious landings, and for raiding. Such operations are always characterised by speed and complexity, and usually by lack of resources as well; things often go very wrong as a result. Marines consequently need the courage to press on in the face of heavy casualties, and the ability to improvise solutions for unexpected problems. You are a member of Force Recon - the 3-4 man teams who scout landing sites for the rest of the Corps. You need those qualities more than most Marines."
+		}
+	]
+}

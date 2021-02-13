@@ -1,0 +1,46 @@
+{
+	"type": "template",
+	"version": 1,
+	"id": "4e1134da-70aa-401a-b5a3-6d447ffbfce8",
+	"advantages": [
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "cb98494a-a626-438d-ab0a-32dcd32ad779",
+			"based_on_id": "a0e2d307-b76c-4752-9cec-48abb99e74a3",
+			"based_on_hash": "9pIibd2zE7HAIsGbLiXL1Vz/swlH0zbwPrUtL2rnNrw",
+			"name": "Decreased Strength",
+			"physical": true,
+			"levels": "4",
+			"points_per_level": -10,
+			"reference": "B14",
+			"features": [
+				{
+					"type": "attribute_bonus",
+					"amount": -1,
+					"per_level": true,
+					"attribute": "st"
+				}
+			],
+			"categories": [
+				"Attribute",
+				"Disadvantage"
+			]
+		},
+		{
+			"type": "advantage",
+			"version": 1,
+			"id": "651613d0-43bb-420a-8a75-d67149f0357e",
+			"based_on_id": "81a9e50b-9204-4ffc-907b-b5a170ed81fc",
+			"based_on_hash": "Jenyz/8A0WkoSrWy+c+9fJ5wMAqrWEyXy1J+NNBOFc8",
+			"name": "High TL",
+			"mental": true,
+			"levels": "4",
+			"points_per_level": 5,
+			"reference": "B23",
+			"categories": [
+				"Advantage"
+			]
+		}
+	]
+}
